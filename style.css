@@ -1,0 +1,352 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: var(--font1);
+    color: white;
+    font-family: "Ojuju", sans-serif;
+    font-optical-sizing: auto;
+    font: weight 300px;
+    font-style: normal;
+
+}
+
+main {
+    height: calc(100vh - 100px);
+    width: 100%;
+    background-image: url(https://demo.kaliumtheme.com/architecture/wp-content/uploads/2018/05/slider-image-second.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    text-align: center;
+}
+
+
+
+/* Navbar */
+nav {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.nav-logo {
+    width: 500px;
+
+}
+
+#logo {
+    width: 200px;
+    cursor: pointer;
+    transition: 2s;
+}
+
+.nav-links ul {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    text-align: center;
+
+}
+
+li {
+    font-size: 22px;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    transition: 300ms;
+    color: black;
+}
+
+li:hover {
+    filter: drop-shadow(0px 10px 10px white);
+}
+
+li::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 100%;
+    width: 100%;
+    height: 2px;
+    transition: 500ms;
+    z-index: -1;
+    background-color: blue;
+}
+
+li:hover::after {
+    right: 0;
+}
+
+.icon-box {
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    padding: 6px;
+    width: 35px;
+    height: 35px;
+    box-shadow: 0 0 5px rgb(17, 16, 16);
+    color: rgb(0, 0, 0);
+}
+
+.icon-box i {
+    color: rgb(0, 0, 0);
+}
+
+/* header */
+
+.header__text p {
+    font-family: "Ojuju", sans-serif;
+    font-size: 60px;
+    width: 1050px;
+    margin: 0 auto;
+    padding: 100px;
+    color: rgb(13, 13, 12);
+}
+
+
+/* section */
+
+section .text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+
+section .text h2 {
+    color: black;
+    padding: 150px;
+    text-align: left;
+    font-size: 50px;
+}
+
+.images {
+    padding: 40px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card_image {
+    position: relative;
+    height: 300px;
+    transition: 600ms;
+}
+
+.card_image span {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    display: none;
+    
+}
+
+
+.card_image:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 0px 15px rgba(75, 75, 255, 0.4);
+    opacity: .3;
+
+}
+
+
+.card_image:hover #parag{
+    display: block;
+    color: black;
+    font-weight: bold;
+}
+
+.card_image img {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+section .images .txt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section .images .txt p {
+    color: black;
+    font-size: 30px;
+}
+
+section .images .txt i {
+    color: black;
+}
+
+.boxes .boxes_txt .box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 200px;
+    padding: 20px;
+    border: 1px solid rgb(83, 69, 69);
+    background-color: rgb(35, 35, 35)
+}
+
+.box h2 {
+    color: rgb(255, 237, 237);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 200px;
+    font-size: 20px;
+
+}
+
+.box p {
+    color: rgb(255, 237, 237);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 800px;
+}
+
+.clients_text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 200px;
+    padding: 20px;
+}
+
+.clients_text h1,
+p {
+    color: rgb(0, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
+    width: 500px;
+    font-size: 20px;
+}
+
+.partners {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    padding: 50px;
+
+}
+
+.part {
+    border: 1px solid rgb(239, 229, 229);
+    background-color: rgb(254, 254, 254);
+
+}
+
+.partners .part img {
+    width: 200px;
+}
+
+
+.part {
+    position: relative;
+    transition: 600ms;
+}
+
+.part span {
+    position: absolute;
+    top: 50%;
+    left: 40px;
+    display: none;
+    
+}
+
+
+.part :hover {
+    transform: translateY(-8px);
+    box-shadow: 0 0px 15px rgba(75, 75, 255, 0.4);
+    opacity: -1;
+
+}
+
+
+.part:hover #parag{
+    display: block;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+}
+
+.news {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(233, 233, 233);
+}
+
+.news_img img {
+    width: 200px;
+    height: 200px;
+}
+
+.news_img {
+    display: flex;
+    align-items: center;
+}
+
+.new_images {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+section .news .news_text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 200px;
+}
+
+section .news .news_text h1 {
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 500px;
+}
+
+section .news .new_images .news_img p,
+b {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    color: black;
+    width: 200px;
+    font-family: sans-serif;
+}
+
+footer .nav-links {
+    padding: 20px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+footer .nav-links ul li {
+    font-size: 20px;
+}
+
+footer .nav-links i {
+    color: black;
+}
+
+.header__text button {
+    background: rgb(34, 56, 73);
+    padding: 10px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+
+
